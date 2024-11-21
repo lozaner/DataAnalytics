@@ -7,7 +7,7 @@ Este portafolio está diseñado para demostrar mi capacidad de transformar datos
 
 
 
-# Análisis de Ventas de Juegos de Consola 🎮📊
+# Proyecto 6 Gamestore Análisis de Ventas de Juegos de Consola 🎮📊
 
 Este proyecto analiza los datos de ventas de videojuegos para responder preguntas clave, como:
 - ¿Qué plataforma tiene las mayores ventas?
