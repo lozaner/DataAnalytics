@@ -33,14 +33,18 @@ Estas variables nos permitirán identificar tendencias, patrones de ventas y pop
 **Revisión de datos faltantes o inconsistentes:
 Año de lanzamiento: Hay valores faltantes en Year_of_Release que deben manejarse.
 Ventas globales y regionales: Valores nulos o vacíos podrían indicar datos no registrados.
+
 **Conversión de tipos de datos:
 Year_of_Release puede necesitar conversión a un formato numérico o de fecha.
 Las columnas de ventas (NA_Sales, etc.) podrían necesitar conversión a tipo numérico para realizar cálculos correctamente.
+
 **Creación de nuevas variables:
 Años desde el lanzamiento: Crear una columna calculada para saber cuántos años han pasado desde que el juego fue lanzado.
 Ventas totales: Verificar que Global_Sales sea la suma de las ventas regionales; si no, calcularla.
+
 **Eliminación de outliers:
 Revisar las ventas extremadamente altas o bajas para evitar distorsiones en el análisis.
+
 **Normalización o estandarización:
 Para análisis comparativos, podría ser necesario escalar las ventas por región.
 
@@ -49,13 +53,18 @@ Al trabajar con datos relacionados con videojuegos, podríamos plantear las sigu
 
 1.- Hipótesis de ventas por región:
 "Los videojuegos tienen mayores ventas en Norteamérica que en otras regiones, debido a la alta penetración de consolas en este mercado."
+
+
 2.- Hipótesis sobre géneros:
 "Los géneros de acción y deportes generan mayores ventas globales que otros géneros debido a su popularidad masiva."
+
 3.- Hipótesis sobre plataformas:
 "Los juegos lanzados en plataformas de última generación (e.g., PS4, Xbox One) tienen mayores ventas globales que los lanzados en plataformas antiguas."
+
 4.-Hipótesis sobre lanzamientos recientes:
 "Los videojuegos lanzados después de 2015 tienen un mayor promedio de ventas globales debido a la creciente demanda de videojuegos."
 
+[Ver Proyecto](https://github.com/lozaner/DataAnalytics/blob/main/gamestore/Games_6.ipynb)
 
 ---
 # Proyecto 5 Megaline Telecom
