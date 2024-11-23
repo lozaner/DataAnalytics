@@ -8,10 +8,7 @@ Este portafolio está diseñado para demostrar mi capacidad de transformar datos
 
 # Proyecto 7 
 
-Este proyecto analiza los datos de ventas de videojuegos para responder preguntas clave, como:
-- ¿Qué plataforma tiene las mayores ventas?
-- ¿Qué género de videojuegos es el más vendido?
-- ¿En qué continente se venden más ciertos géneros?
+
 
 ---
 
@@ -64,7 +61,7 @@ Al trabajar con datos relacionados con videojuegos, podríamos plantear las sigu
 4.-Hipótesis sobre lanzamientos recientes:
 "Los videojuegos lanzados después de 2015 tienen un mayor promedio de ventas globales debido a la creciente demanda de videojuegos."
 
-[Ver Proyecto](https://github.com/lozaner/DataAnalytics/blob/main/gamestore/Games_6.ipynb)
+[Ver Proyecto](https://github.com/lozaner/DataAnalytics/blob/main/portfolio-DA/gamestore/Games_6.ipynb)
 
 ---
 # Proyecto 5 Megaline Telecom
@@ -82,30 +79,30 @@ Explicaremos:
 Cómo formulamos las hipótesis nula y alternativa.
 Qué criterio utilizamos para probar las hipótesis y por qué.
 
-[Ver Proyecto](https://github.com/lozaner/DataAnalytics/blob/main/megaline-cellphone/compañia%20telefonica.ipynb)
+[Ver Proyecto](https://github.com/lozaner/DataAnalytics/blob/main/portfolio-DA/megaline-cellphone/compañia%20telefonica.ipynb)
 
 
 ---
 # Proyecto 4 
 
 
-
+[Ver Proyecto](https://github.com/lozaner/DataAnalytics/blob/main/portfolio-DA/data-wrangling-instacart/instacart-grocery.ipynb)
 ---
 # Proyecto 3 
 
 
-
+[Ver Proyecto](https://github.com/lozaner/DataAnalytics/blob/main/portfolio-DA/data-wrangling-spotify/data-wrangling-spotify.ipynb)
 ---
 # Proyecto 2 
 
 
-
+[Ver Proyecto](https://github.com/lozaner/DataAnalytics/blob/main/portfolio-DA/analisis-venta-basico-2/analis-venta-basico-2.ipynb)
 ---
 # Proyecto 1 
 
 
 
-
+[Ver Proyecto](https://github.com/lozaner/DataAnalytics/blob/main/portfolio-DA/analisis-venta-basico/store_1.ipynb)
 ---
 
 ## 👨‍💻 Autor
