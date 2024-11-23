@@ -15,7 +15,7 @@ Este proyecto analiza los datos de ventas de videojuegos para responder pregunta
 
 ---
 
-# Proyecto 6 Gamestore Análisis de Ventas de Juegos de Consola 🎮📊
+# Proyecto 6 Análisis de Ventas de Juegos de Consola 🎮📊
 
 ## Descripción de datos
 Descripción general: El conjunto de datos contiene información relacionada con videojuegos. Cada fila representa un juego con características como título, género, plataforma, año de lanzamiento, y ventas globales.
