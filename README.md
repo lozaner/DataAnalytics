@@ -84,7 +84,36 @@ Qué criterio utilizamos para probar las hipótesis y por qué.
 
 ---
 # Proyecto 4 
+## Descripción de los datos
+El dataset contiene información transaccional de un supermercado en línea (Instacart). Los datos incluyen:
 
+Órdenes: Información sobre las compras realizadas por los clientes (ID de cliente, número de pedido, etc.).
+Productos: Listado de productos disponibles (nombres, categorías, etc.).
+Departamentos: Clasificación de los productos según categorías o departamentos.
+Datos temporales: Información sobre horarios y días en los que se realizan las compras.
+Los datos son ricos en variables relacionadas con los hábitos de compra de los clientes, lo que facilita el análisis de comportamiento del consumidor.
+
+## Preprocesamiento de los datos
+1.- Carga de datos: Lectura de archivos CSV (u otro formato) en estructuras de datos como DataFrames de Pandas.
+
+2.-Limpieza de datos:
+Eliminación de valores nulos o duplicados.
+Conversión de tipos de datos según necesidad.
+
+3.-Transformaciones:
+Creación de variables nuevas, como el tiempo entre órdenes consecutivas o la frecuencia de compra de ciertos productos.
+Unión de tablas utilizando claves comunes (por ejemplo, product_id o order_id).
+
+4.-Normalización: Cambio en los nombres de columnas para uniformidad y mejor comprensión.
+
+## Hipótesis
+1.-Patrones de recompra: Los clientes tienden a comprar productos de ciertas categorías con mayor frecuencia durante los fines de semana.
+
+2.-Preferencias por departamento: Los productos de ciertos departamentos (como frutas y verduras) tienen un mayor porcentaje de repetición en comparación con otros.
+
+3.-Relación entre el tiempo y las compras: Los clientes con intervalos más cortos entre pedidos probablemente sean clientes regulares con patrones de recompra estables.
+
+4.-Ofertas y promociones: Los descuentos o promociones impactan significativamente en el volumen de compras.
 
 [Ver Proyecto](https://github.com/lozaner/DataAnalytics/blob/main/portfolio-DA/data-wrangling-instacart/instacart-grocery.ipynb)
 ---
