@@ -64,7 +64,7 @@ Al trabajar con datos relacionados con videojuegos, podríamos plantear las sigu
 [Ver Proyecto](https://github.com/lozaner/DataAnalytics/blob/main/portfolio-DA/gamestore/Games_6.ipynb)
 
 ---
-# Proyecto 5 Megaline Telecom
+# Proyecto 5 Megaline Telecom 📱
 
 Trabajamos como analista para el operador de telecomunicaciones Megaline. La empresa ofrece a sus clientes dos tarifas de prepago, Surf y Ultimate. El departamento comercial quiere saber cuál de los planes genera más ingresos para ajustar el presupuesto de publicidad.
 
@@ -83,7 +83,7 @@ Qué criterio utilizamos para probar las hipótesis y por qué.
 
 
 ---
-# Proyecto 4 
+# Proyecto 4 Data Wrangling Instacart Grosery 🛒
 ## Descripción de los datos
 El dataset contiene información transaccional de un supermercado en línea (Instacart). Los datos incluyen:
 
@@ -117,17 +117,17 @@ Unión de tablas utilizando claves comunes (por ejemplo, product_id o order_id).
 
 [Ver Proyecto](https://github.com/lozaner/DataAnalytics/blob/main/portfolio-DA/data-wrangling-instacart/instacart-grocery.ipynb)
 ---
-# Proyecto 3 
+# Proyecto 3 Data Wrangling Spotify  🎤🔊
 
 
 [Ver Proyecto](https://github.com/lozaner/DataAnalytics/blob/main/portfolio-DA/data-wrangling-spotify/data-wrangling-spotify.ipynb)
 ---
-# Proyecto 2 
+# Proyecto 2 Analisis de Store Basico
 
 
 [Ver Proyecto](https://github.com/lozaner/DataAnalytics/blob/main/portfolio-DA/analisis-venta-basico-2/analis-venta-basico-2.ipynb)
 ---
-# Proyecto 1 
+# Proyecto 1 Analisis de Store Basico
 
 
 
