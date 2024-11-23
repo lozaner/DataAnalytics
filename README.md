@@ -1,4 +1,4 @@
-# DataAnalytics
+# Data Analytics
 
 Descripción General del Portafolio
 Bienvenido a mi portafolio de proyectos de análisis de datos con Python. Aquí encontrarás una colección de trabajos que reflejan mi trayectoria en el campo, desde mis primeros pasos hasta los proyectos más avanzados que he desarrollado recientemente. Cada proyecto incluye un análisis detallado del problema, el proceso completo de manipulación y visualización de datos, y las soluciones implementadas.
