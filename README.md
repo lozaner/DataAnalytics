@@ -157,25 +157,71 @@ Parece que no puedo realizar análisis de datos más avanzados en este momento. 
 # Proyecto 2 Analisis de Store Basico
 
 ## Descripción de datos
-Descripción general: 
+Es el análisis exploratorio y estadístico inicial que se realiza sobre un conjunto de datos. Este proceso incluye:
 
-Name: Nombre del videojuego.
-Platform: Plataforma en la que el juego fue lanzado (e.g., PS4, Xbox).
-Year_of_Release: Año de lanzamiento del juego.
-Genre: Género del videojuego (e.g., Acción, Deporte).
-Global_Sales: Ventas globales del juego en millones de unidades.
-NA_Sales, EU_Sales, JP_Sales: Ventas por región (Norteamérica, Europa, Japón).
-Estas variables nos permitirán identificar tendencias, patrones de ventas y popularidad según región o género.
+Verificar las dimensiones del dataset (número de filas y columnas).
+Identificar los tipos de datos de cada variable (numérica, categórica, etc.).
+Examinar las estadísticas descriptivas (media, mediana, moda, desviación estándar, valores mínimos y máximos).
+Detectar datos faltantes o valores atípicos (outliers).
+Visualizar distribuciones y relaciones entre variables.
 
 ## Preprocesamiento de datos
-**
+Es el conjunto de técnicas aplicadas para limpiar, transformar y preparar los datos para un análisis o modelo. Incluye:
 
-## Hipótesis
+Manejo de datos faltantes (imputación o eliminación).
+Normalización o escalamiento de variables.
+Codificación de variables categóricas (como one-hot encoding).
+Eliminación de duplicados.
+Transformaciones de datos (logaritmos, escalamiento, etc.).
+Reducción de dimensionalidad o selección de variables relevantes.
+
+## Prueba de hipótesis
+Este proyecto se hizo limpieza general de toda la informacion asi como se creo funciones para simplicar nuestro trabajo de limpieza.
+
+
 
 
 [Ver Proyecto](https://github.com/lozaner/DataAnalytics/blob/main/portfolio-DA/analisis-venta-basico-2/analis-venta-basico-2.ipynb)
 ---
 # Proyecto 1 Analisis de Store Basico
+
+## Descripción de los datos
+El conjunto de datos incluye una lista de usuarios con los siguientes atributos:
+
+ID del usuario (user_id): Identificador único (cadena).
+Nombre del usuario (user_name): Nombre del cliente (cadena, incluye espacios y posibles inconsistencias como guiones bajos).
+Edad (user_age): Edad del usuario (número flotante).
+Categorías favoritas (fav_categories): Lista de categorías de productos que el usuario prefiere.
+Gastos por categoría: Lista de montos gastados en cada categoría favorita (números enteros).
+
+Ejemplo de registro:
+
+['32415', ' mike_reed ', 32.0, ['ELECTRONICS', 'SPORT', 'BOOKS'], [894, 213, 173]]
+
+## Preprocesamiento de datos
+Se identificaron acciones necesarias:
+
+1. Limpieza de nombres:
+Eliminar espacios en blanco al inicio y al final.
+Sustituir caracteres como guiones bajos (_) por espacios para mejorar la legibilidad.
+Capitalizar los nombres para mantener un formato consistente (por ejemplo, "JOHN DOE" → "John Doe").
+
+Validación de categorías y gastos:
+Verificar que cada usuario tenga el mismo número de categorías favoritas y montos de gasto asociados. Si no coinciden, se eliminarían esos registros.
+Ejemplo transformado:
+
+Antes: ['32415', ' mike_reed ', 32.0, ['ELECTRONICS', 'SPORT', 'BOOKS'], [894, 213, 173]]
+Después: ['32415', 'Mike Reed', 32.0, ['ELECTRONICS', 'SPORT', 'BOOKS'], [894, 213, 173]]
+
+2. Exploración de datos
+Una vez limpios, habría revisado los datos para comprender mejor las tendencias:
+
+Distribución de edades: Analizar la media, mediana y rango de las edades de los usuarios.
+Categorías favoritas más comunes: Identificar cuáles categorías son más populares.
+Relación entre edad y categorías favoritas: Explorar si hay correlación entre la edad y las preferencias.
+
+## Hipótesis
+En este proyecto fue iniciandome en el mundo de analisis de datos siendo la parte de limpieza asi como ordenar, trasformar a minusculas o mayusculas, cambiar a enteros, etc... fue solo limpieza y procesamiento de datos buen inicio para el mundo de analista de datos.
 
 
 
