@@ -17,41 +17,44 @@ Este proyecto analiza los datos de ventas de videojuegos para responder pregunta
 
 # Proyecto 6 Gamestore Análisis de Ventas de Juegos de Consola 🎮📊
 
-Este proyecto analiza los datos de ventas de videojuegos para responder preguntas clave, como:
-- ¿Qué plataforma tiene las mayores ventas?
-- ¿Qué género de videojuegos es el más vendido?
-- ¿En qué continente se venden más ciertos géneros?
+## Descripción de datos
+Descripción general: El conjunto de datos contiene información relacionada con videojuegos. Cada fila representa un juego con características como título, género, plataforma, año de lanzamiento, y ventas globales.
+Principales columnas del conjunto de datos:
 
-## 🚀 Objetivos del Proyecto
-1. Identificar la plataforma más vendida.
-2. Analizar los géneros más populares en ventas.
-3. Examinar las tendencias de ventas por región geográfica.
+Name: Nombre del videojuego.
+Platform: Plataforma en la que el juego fue lanzado (e.g., PS4, Xbox).
+Year_of_Release: Año de lanzamiento del juego.
+Genre: Género del videojuego (e.g., Acción, Deporte).
+Global_Sales: Ventas globales del juego en millones de unidades.
+NA_Sales, EU_Sales, JP_Sales: Ventas por región (Norteamérica, Europa, Japón).
+Estas variables nos permitirán identificar tendencias, patrones de ventas y popularidad según región o género.
 
----
+## Preprocesamiento de datos
+**Revisión de datos faltantes o inconsistentes:
+Año de lanzamiento: Hay valores faltantes en Year_of_Release que deben manejarse.
+Ventas globales y regionales: Valores nulos o vacíos podrían indicar datos no registrados.
+**Conversión de tipos de datos:
+Year_of_Release puede necesitar conversión a un formato numérico o de fecha.
+Las columnas de ventas (NA_Sales, etc.) podrían necesitar conversión a tipo numérico para realizar cálculos correctamente.
+**Creación de nuevas variables:
+Años desde el lanzamiento: Crear una columna calculada para saber cuántos años han pasado desde que el juego fue lanzado.
+Ventas totales: Verificar que Global_Sales sea la suma de las ventas regionales; si no, calcularla.
+**Eliminación de outliers:
+Revisar las ventas extremadamente altas o bajas para evitar distorsiones en el análisis.
+**Normalización o estandarización:
+Para análisis comparativos, podría ser necesario escalar las ventas por región.
 
-## 🛠️ Herramientas y Tecnologías
-- **Librerías de Python:**
-  - `pandas`: Manipulación de datos.
-  - `numpy`: Operaciones numéricas.
-  - `matplotlib` y `seaborn`: Visualización de datos.
-  - `sidetable`: Generación rápida de tablas resumen.
-  - `scipy`: Estadísticas avanzadas.
+## Hipótesis
+Al trabajar con datos relacionados con videojuegos, podríamos plantear las siguientes hipótesis:
 
----
-
-## 🗂️ Estructura del Proyecto
-1. **Inicialización y carga de datos:**
-   - Importación de librerías.
-   - Lectura y visualización preliminar del conjunto de datos.
-   
-2. **Análisis exploratorio de datos (EDA):**
-   - Limpieza de datos: manejo de valores nulos y duplicados.
-   - Estadísticas descriptivas por género, plataforma y región.
-   
-3. **Visualización de datos:**
-   - Gráficos de barras para ventas por género y plataforma.
-   - Gráficos comparativos de ventas entre continentes.
-
+1.- Hipótesis de ventas por región:
+"Los videojuegos tienen mayores ventas en Norteamérica que en otras regiones, debido a la alta penetración de consolas en este mercado."
+2.- Hipótesis sobre géneros:
+"Los géneros de acción y deportes generan mayores ventas globales que otros géneros debido a su popularidad masiva."
+3.- Hipótesis sobre plataformas:
+"Los juegos lanzados en plataformas de última generación (e.g., PS4, Xbox One) tienen mayores ventas globales que los lanzados en plataformas antiguas."
+4.-Hipótesis sobre lanzamientos recientes:
+"Los videojuegos lanzados después de 2015 tienen un mayor promedio de ventas globales debido a la creciente demanda de videojuegos."
 
 
 ---
