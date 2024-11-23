@@ -120,11 +120,57 @@ Unión de tablas utilizando claves comunes (por ejemplo, product_id o order_id).
 [Ver Proyecto](https://github.com/lozaner/DataAnalytics/blob/main/portfolio-DA/data-wrangling-instacart/instacart-grocery.ipynb)
 ---
 # Proyecto 3 Data Wrangling Spotify  🎤🔊
+## Descripción de los datos
+El archivo contiene datos relacionados con la reproducción de música en diferentes ciudades. Las columnas son las siguientes:
 
+City: Nombre de la ciudad.
+Day: Día de la semana en que se registraron las reproducciones.
+Genre: Género musical reproducido.
+Plays: Número de reproducciones.
+
+## Preprocesamiento de datos
+Valores ausentes: Se debe verificar si hay celdas vacías en las columnas clave.
+Duplicados: Se identifican filas duplicadas en los datos.
+Revisión de formatos: Asegurarse de que las columnas tienen los tipos correctos (por ejemplo, números en Plays).
+Voy a realizar estos pasos a continuación. ​​
+
+** Resultados del preprocesamiento:
+
+Valores ausentes: No hay valores ausentes en ninguna de las columnas.
+Duplicados: No hay filas duplicadas en los datos.
+Tipos de datos:
+
+City, Day, Genre: Tipo object (texto), correcto para estas variables.
+Plays: Tipo int64, adecuado para el número de reproducciones.
+Los datos están limpios y no requieren modificaciones en estas áreas.
+
+## Prueba de hipótesis
+Para el análisis, plantearemos la siguiente hipótesis:
+
+Hipótesis: La cantidad promedio de reproducciones de música en "City A" es diferente de la cantidad promedio en "City B".
+Voy a calcular las medias y realizar una prueba estadística (t-test) para comparar. ​​
+
+Parece que no puedo realizar análisis de datos más avanzados en este momento. Por favor, inténtalo de nuevo más tarde o proporciona más detalles si necesitas asistencia adicional con los resultados o análisis.
 
 [Ver Proyecto](https://github.com/lozaner/DataAnalytics/blob/main/portfolio-DA/data-wrangling-spotify/data-wrangling-spotify.ipynb)
 ---
 # Proyecto 2 Analisis de Store Basico
+
+## Descripción de datos
+Descripción general: 
+
+Name: Nombre del videojuego.
+Platform: Plataforma en la que el juego fue lanzado (e.g., PS4, Xbox).
+Year_of_Release: Año de lanzamiento del juego.
+Genre: Género del videojuego (e.g., Acción, Deporte).
+Global_Sales: Ventas globales del juego en millones de unidades.
+NA_Sales, EU_Sales, JP_Sales: Ventas por región (Norteamérica, Europa, Japón).
+Estas variables nos permitirán identificar tendencias, patrones de ventas y popularidad según región o género.
+
+## Preprocesamiento de datos
+**
+
+## Hipótesis
 
 
 [Ver Proyecto](https://github.com/lozaner/DataAnalytics/blob/main/portfolio-DA/analisis-venta-basico-2/analis-venta-basico-2.ipynb)
