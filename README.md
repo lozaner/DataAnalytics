@@ -63,7 +63,7 @@ Al trabajar con datos relacionados con videojuegos, podríamos plantear las sigu
 4.-Hipótesis sobre lanzamientos recientes:
 "Los videojuegos lanzados después de 2015 tienen un mayor promedio de ventas globales debido a la creciente demanda de videojuegos."
 
-[Ver Proyecto](https://github.com/lozaner/DataAnalytics/blob/main/portfolio-DA/gamestore/Games_6.ipynb)
+[Ver Proyecto](https://github.com/lozaner/DataAnalytics/blob/main/portfolio-DA/gamestore/game-6.ipynb)
 
 ---
 # Proyecto 5 Megaline Telecom 📱
