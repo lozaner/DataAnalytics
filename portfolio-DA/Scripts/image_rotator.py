@@ -2,8 +2,8 @@
 
 from PIL import Image # importa el módulo Image de la librería PIL
 
-# carga una imagen llamada 'tripleten_logo.jpeg'.
-im = Image.open('Image-14.png')
+# carga una imagen llamada 'tripleten.png'.
+im = Image.open('tripleten.png')
 
 # obtén el tamaño de la imagen mediante el atributo .size y muéstralo
 print(im.size)
@@ -12,7 +12,7 @@ print(im.size)
 rotated = im.rotate(90)
 
 # guarda la imagen girada
-rotated.save('Image-14.png')
+rotated.save('tripleten.png')
 
 #para ejecutar desde la terinal se pone el siguiete codigo
 #python image_rotator.py
