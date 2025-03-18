@@ -7,18 +7,52 @@ Los proyectos están organizados de forma cronológica inversa, mostrando primer
 
 Este portafolio está diseñado para demostrar mi capacidad de transformar datos en información valiosa que impulsa decisiones estratégicas. Espero que disfrutes explorando mi trabajo tanto como yo disfruté creándolo.
 
+---
+# Proyecto 8 SQL  
 
+## Descripción del proyecto
+El proyecto consiste en analizar datos de viajes en taxi en Chicago para entender patrones de comportamiento y probar hipótesis relacionadas con la duración de los viajes en función de las condiciones climáticas. El análisis se basa en tres archivos CSV obtenidos mediante consultas SQL:
+
+project_sql_result_01.csv – Datos sobre el número de viajes por compañía de taxis el 15 y 16 de noviembre de 2017.
+project_sql_result_04.csv – Datos sobre el promedio de viajes que terminaron en cada barrio de Chicago en noviembre de 2017.
+project_sql_result_07.csv – Datos sobre viajes desde el Loop hasta el Aeropuerto Internacional O'Hare, incluyendo fecha y hora, condiciones climáticas y duración del viaje.
+
+El proyecto incluye los siguientes objetivos:
+✅ Importar y limpiar los datos.
+✅ Realizar análisis exploratorio para identificar patrones y tendencias.
+✅ Identificar las 10 principales compañías de taxis y barrios por número de viajes.
+✅ Visualizar los resultados mediante gráficos.
+✅ Probar la hipótesis sobre la relación entre la duración de los viajes y las condiciones climáticas en sábados lluviosos.
+
+## Proceso de preprocesamiento
+El preprocesamiento de datos incluyó las siguientes tareas:
+1. Carga de datos: Se usaron las librerías pandas, numpy, seaborn, matplotlib y scipy para importar y manipular los datos.
+2. Revisión de datos: Se verificó que los datos no tuvieran valores nulos o duplicados.
+3. Corrección de tipos de datos: Se convirtió el campo de fecha y hora (start_ts) al formato datetime.
+4. Eliminación de duplicados: Se eliminaron 197 registros duplicados en el archivo de viajes.
+5. Tratamiento de valores atípicos: Se usó el rango intercuartil (IQR) para eliminar valores extremos en la duración de los viajes.
+6. Agrupación y ordenación: Se agruparon los datos por compañía de taxis y barrios para identificar los 10 principales en cada caso.
+
+## Hipótesis general
+Hipótesis nula (H₀): La duración promedio de los viajes desde el Loop hasta el Aeropuerto Internacional O'Hare NO cambia significativamente los sábados lluviosos en comparación con los sábados no lluviosos.
+
+Hipótesis alternativa (H₁): La duración promedio de los viajes desde el Loop hasta el Aeropuerto Internacional O'Hare cambia significativamente los sábados lluviosos en comparación con los sábados no lluviosos.
+
+Para comprobar la hipótesis:
+➡️ Se realizó una prueba de Levene para verificar si las varianzas de las duraciones son iguales.
+➡️ Se aplicó una prueba t-test para determinar si hay diferencias significativas entre las medias.
+➡️ Se estableció un nivel de significancia de 0.05 para la prueba.
+
+---
 # Proyecto 7 Aplicacion Web
 
-Descripción de los datos del proyecto
-
+## Descripción de los datos del proyecto
 El proyecto se centra en crear una aplicación web utilizando Streamlit para visualizar datos de anuncios de coches. El conjunto de datos (vehicles_us.csv) contiene información detallada sobre vehículos en venta en Estados Unidos. El objetivo es desarrollar habilidades prácticas en:
 
 Configuración de entornos virtuales en Python.
 Análisis exploratorio de datos (EDA) mediante pandas y plotly-express.
 Creación de una aplicación web interactiva con Streamlit para presentar los resultados.
 Despliegue de la aplicación en un servicio en la nube (Render).
-
 
 Los datos incluyen información sobre:
 
@@ -48,16 +82,14 @@ Los datos incluyen información sobre:
 - Asegurarse de que no haya valores nulos o datos inconsistentes.
 
 
-Hipótesis
+## Hipótesis
 
-- Hipótesis sobre el precio de los vehículos
-- Hipótesis nula (H₀): El precio promedio de los vehículos no varía significativamente entre diferentes marcas.
-- Hipótesis alternativa (H₁): El precio promedio de los vehículos varía significativamente entre diferentes marcas.
-- Hipótesis sobre el año de fabricación y el precio
-- Hipótesis nula (H₀): No existe una correlación significativa entre el año de fabricación y el precio del vehículo.
-- Hipótesis alternativa (H₁): Existe una correlación significativa entre el año de fabricación y el precio del vehículo.
-
-
+1. Hipótesis sobre el precio de los vehículos
+2.  Hipótesis nula (H₀): El precio promedio de los vehículos no varía significativamente entre diferentes marcas.
+3. Hipótesis alternativa (H₁): El precio promedio de los vehículos varía significativamente entre diferentes marcas.
+4. Hipótesis sobre el año de fabricación y el precio
+5. Hipótesis nula (H₀): No existe una correlación significativa entre el año de fabricación y el precio del vehículo.
+6. Hipótesis alternativa (H₁): Existe una correlación significativa entre el año de fabricación y el precio del vehículo.
 
 ---
 
