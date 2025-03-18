@@ -18,11 +18,11 @@ project_sql_result_04.csv – Datos sobre el promedio de viajes que terminaron e
 project_sql_result_07.csv – Datos sobre viajes desde el Loop hasta el Aeropuerto Internacional O'Hare, incluyendo fecha y hora, condiciones climáticas y duración del viaje.
 
 El proyecto incluye los siguientes objetivos:
-- ✅ Importar y limpiar los datos.
-- ✅ Realizar análisis exploratorio para identificar patrones y tendencias.
-- ✅ Identificar las 10 principales compañías de taxis y barrios por número de viajes.
-- ✅ Visualizar los resultados mediante gráficos.
-- ✅ Probar la hipótesis sobre la relación entre la duración de los viajes y las condiciones climáticas en sábados lluviosos.
+-  Importar y limpiar los datos.
+-  Realizar análisis exploratorio para identificar patrones y tendencias.
+-  Identificar las 10 principales compañías de taxis y barrios por número de viajes.
+-  Visualizar los resultados mediante gráficos.
+-  Probar la hipótesis sobre la relación entre la duración de los viajes y las condiciones climáticas en sábados lluviosos.
 
 ## Proceso de preprocesamiento
 El preprocesamiento de datos incluyó las siguientes tareas:
@@ -40,9 +40,11 @@ Hipótesis alternativa (H₁): La duración promedio de los viajes desde el Loop
 
 Para comprobar la hipótesis:
 
-- ➡️ Se realizó una prueba de Levene para verificar si las varianzas de las duraciones son iguales.
-- ➡️ Se aplicó una prueba t-test para determinar si hay diferencias significativas entre las medias.
-- ➡️ Se estableció un nivel de significancia de 0.05 para la prueba.
+-  Se realizó una prueba de Levene para verificar si las varianzas de las duraciones son iguales.
+-  Se aplicó una prueba t-test para determinar si hay diferencias significativas entre las medias.
+-  Se estableció un nivel de significancia de 0.05 para la prueba.
+
+[Ver Proyecto](https://github.com/lozaner/DataAnalytics/blob/main/portfolio-DA/S6-gamestore/game-6.ipynb)
 
 ---
 # Proyecto 7 Aplicacion Web
@@ -91,6 +93,8 @@ Los datos incluyen información sobre:
 4. Hipótesis sobre el año de fabricación y el precio
 5. Hipótesis nula (H₀): No existe una correlación significativa entre el año de fabricación y el precio del vehículo.
 6. Hipótesis alternativa (H₁): Existe una correlación significativa entre el año de fabricación y el precio del vehículo.
+
+[Ver Proyecto](https://github.com/lozaner/DataAnalytics/blob/main/portfolio-DA/S6-gamestore/game-6.ipynb)
 
 ---
 
