@@ -10,6 +10,53 @@ Este portafolio está diseñado para demostrar mi capacidad de transformar datos
 
 # Proyecto 7 Aplicacion Web
 
+Descripción de los datos del proyecto
+
+El proyecto se centra en crear una aplicación web utilizando Streamlit para visualizar datos de anuncios de coches. El conjunto de datos (vehicles_us.csv) contiene información detallada sobre vehículos en venta en Estados Unidos. El objetivo es desarrollar habilidades prácticas en:
+
+Configuración de entornos virtuales en Python.
+Análisis exploratorio de datos (EDA) mediante pandas y plotly-express.
+Creación de una aplicación web interactiva con Streamlit para presentar los resultados.
+Despliegue de la aplicación en un servicio en la nube (Render).
+
+
+Los datos incluyen información sobre:
+
+- Precio del vehículo.
+- Año de fabricación.
+- Marca y modelo.
+- Estado (nuevo o usado).
+- Tipo de combustible.
+- Kilometraje.
+- Ubicación geográfica, entre otros.
+- Pasos del Preprocesamiento de Datos
+- Carga de datos
+- Leer el archivo CSV (vehicles_us.csv) usando pandas y cargarlo en un DataFrame.
+- Inspeccionar el conjunto de datos con info() y head() para verificar la estructura y tipos de datos.
+- Limpieza de datos
+- Eliminar valores duplicados y filas con valores nulos si es necesario.
+- Convertir columnas de fechas a formato datetime.
+- Corregir errores tipográficos o de formato en las columnas de texto (por ejemplo, marcas o modelos).
+- Transformación de datos
+- Crear columnas adicionales si es necesario (por ejemplo, calcular el precio promedio por año o por tipo de vehículo).
+- Redondear valores numéricos si es necesario.
+- Agregación de datos
+- Agrupar los datos por categoría (por ejemplo, por marca o tipo de combustible) para facilitar el análisis.
+- Calcular estadísticas descriptivas (promedio, mediana, desviación estándar).
+- Validación de datos
+- Comprobar que las transformaciones y la limpieza se realizaron correctamente.
+- Asegurarse de que no haya valores nulos o datos inconsistentes.
+
+
+Hipótesis
+
+- Hipótesis sobre el precio de los vehículos
+- Hipótesis nula (H₀): El precio promedio de los vehículos no varía significativamente entre diferentes marcas.
+- Hipótesis alternativa (H₁): El precio promedio de los vehículos varía significativamente entre diferentes marcas.
+- Hipótesis sobre el año de fabricación y el precio
+- Hipótesis nula (H₀): No existe una correlación significativa entre el año de fabricación y el precio del vehículo.
+- Hipótesis alternativa (H₁): Existe una correlación significativa entre el año de fabricación y el precio del vehículo.
+
 
 
 ---
@@ -17,34 +64,29 @@ Este portafolio está diseñado para demostrar mi capacidad de transformar datos
 # Proyecto 6 Análisis de Ventas de Juegos de Consola 🎮📊
 
 ## Descripción de datos
-Descripción general: El conjunto de datos contiene información relacionada con videojuegos. Cada fila representa un juego con características como título, género, plataforma, año de lanzamiento, y ventas globales.
-Principales columnas del conjunto de datos:
 
-Name: Nombre del videojuego.
-Platform: Plataforma en la que el juego fue lanzado (e.g., PS4, Xbox).
-Year_of_Release: Año de lanzamiento del juego.
-Genre: Género del videojuego (e.g., Acción, Deporte).
-Global_Sales: Ventas globales del juego en millones de unidades.
-NA_Sales, EU_Sales, JP_Sales: Ventas por región (Norteamérica, Europa, Japón).
-Estas variables nos permitirán identificar tendencias, patrones de ventas y popularidad según región o género.
+Descripción General del Proyecto
+El proyecto consiste en un análisis de datos de ventas de videojuegos para la tienda online Ice, que vende videojuegos a nivel mundial. El objetivo principal es identificar patrones y factores que determinan el éxito de un videojuego, con el fin de planificar campañas publicitarias efectivas y detectar proyectos prometedores para el futuro. El análisis se basa en un conjunto de datos que abarca desde 2016, y se asume que el análisis se realiza en diciembre de 2016 para planificar estrategias para el año 2017.
+
 
 ## Preprocesamiento de datos
-**Revisión de datos faltantes o inconsistentes:
+1. Revisión de datos faltantes o inconsistentes:
 Año de lanzamiento: Hay valores faltantes en Year_of_Release que deben manejarse.
 Ventas globales y regionales: Valores nulos o vacíos podrían indicar datos no registrados.
 
-**Conversión de tipos de datos:
+2. Conversión de tipos de datos:
 Year_of_Release puede necesitar conversión a un formato numérico o de fecha.
 Las columnas de ventas (NA_Sales, etc.) podrían necesitar conversión a tipo numérico para realizar cálculos correctamente.
 
-**Creación de nuevas variables:
+3. Creación de nuevas variables:
 Años desde el lanzamiento: Crear una columna calculada para saber cuántos años han pasado desde que el juego fue lanzado.
 Ventas totales: Verificar que Global_Sales sea la suma de las ventas regionales; si no, calcularla.
 
-**Eliminación de outliers:
+4. Eliminación de outliers:
 Revisar las ventas extremadamente altas o bajas para evitar distorsiones en el análisis.
 
-**Normalización o estandarización:
+5. Normalización o estandarización:
+
 Para análisis comparativos, podría ser necesario escalar las ventas por región.
 
 ## Hipótesis
@@ -52,7 +94,6 @@ Al trabajar con datos relacionados con videojuegos, podríamos plantear las sigu
 
 1.- Hipótesis de ventas por región:
 "Los videojuegos tienen mayores ventas en Norteamérica que en otras regiones, debido a la alta penetración de consolas en este mercado."
-
 
 2.- Hipótesis sobre géneros:
 "Los géneros de acción y deportes generan mayores ventas globales que otros géneros debido a su popularidad masiva."
@@ -63,23 +104,48 @@ Al trabajar con datos relacionados con videojuegos, podríamos plantear las sigu
 4.-Hipótesis sobre lanzamientos recientes:
 "Los videojuegos lanzados después de 2015 tienen un mayor promedio de ventas globales debido a la creciente demanda de videojuegos."
 
-[Ver Proyecto](https://github.com/lozaner/DataAnalytics/blob/main/portfolio-DA/gamestore/game-6.ipynb)
+[Ver Proyecto](https://github.com/lozaner/DataAnalytics/blob/main/portfolio-DA/S6-gamestore/game-6.ipynb)
 
 ---
-# Proyecto 5 Megaline Telecom 📱
+# Proyecto 5 Megaline Telecom
 
-Trabajamos como analista para el operador de telecomunicaciones Megaline. La empresa ofrece a sus clientes dos tarifas de prepago, Surf y Ultimate. El departamento comercial quiere saber cuál de los planes genera más ingresos para ajustar el presupuesto de publicidad.
+Descripción General del Proyecto
+El proyecto consiste en analizar los ingresos generados por dos planes tarifarios (Surf y Ultimate) ofrecidos por Megaline, una empresa de telecomunicaciones. El objetivo es determinar cuál de los dos planes genera más ingresos para poder ajustar el presupuesto de publicidad de la empresa. Para ello, se dispone de datos sobre 500 clientes, que incluyen información sobre las llamadas, mensajes y datos consumidos en 2018, así como el plan al que están suscritos.
 
-Vamos a realizar un análisis preliminar de las tarifas basado en una selección de clientes relativamente pequeña. Tendrás los datos de 500 clientes de Megaline: quiénes son los clientes, de dónde son, qué tarifa usan y la cantidad de llamadas que hicieron y los mensajes de texto que enviaron en 2018. Tu trabajo es analizar el comportamiento de los clientes y determinar qué tarifa de prepago genera más ingresos.
+## Preprocesamiento de los datos
 
-HIPÓTESIS
+1. Carga de datos
+2. Cargar las cinco tablas de datos (users, calls, messages, internet, plans) en DataFrames de pandas.
+3. Revisión y limpieza de datos
+4. Inspeccionar los datos para identificar valores nulos y duplicados.
+5. Corregir los tipos de datos (por ejemplo, convertir fechas de strings a datetime).
+6. Completar o eliminar valores nulos según corresponda.
+7. Redondeo de datos
+8. Redondear la duración de las llamadas hacia arriba al minuto más cercano.
+9. Redondear los datos de tráfico de internet al GB más cercano.
+10. Creación de columnas adicionales
+11. Extraer el mes de las fechas para facilitar el análisis mensual.
+12. Agregación de datos por usuario y mes
+13. Número total de llamadas, mensajes y datos utilizados por cada usuario al mes.
+14. Crear una tabla maestra que combine todos los datos en un solo DataFrame.
+15. Cálculo de ingresos mensuales
+16. Restar el límite incluido en el plan al consumo real.
+17. Cobrar los minutos, mensajes y datos extra.
+18. Sumar la tarifa mensual del plan para obtener el ingreso mensual total.
 
-El ingreso promedio de los usuarios de las tarifas Ultimate y Surf difiere.
-El ingreso promedio de los usuarios en el área de estados Nueva York-Nueva Jersey es diferente al de los usuarios de otras regiones. Decidiremos qué valor alfa usar.
 
-Explicaremos:
-Cómo formulamos las hipótesis nula y alternativa.
-Qué criterio utilizamos para probar las hipótesis y por qué.
+## Descripción de la hipótesis
+
+- Hipótesis sobre los ingresos por tarifa
+- Hipótesis nula (H₀): El ingreso promedio de los usuarios de los planes Surf y Ultimate es igual.
+- Hipótesis alternativa (H₁): El ingreso promedio de los usuarios de los planes Surf y Ultimate es diferente.
+- Hipótesis sobre los ingresos por región
+- Hipótesis nula (H₀): El ingreso promedio de los usuarios en la región de Nueva York-Nueva Jersey es igual al ingreso  promedio en otras regiones.
+- Hipótesis alternativa (H₁): El ingreso promedio de los usuarios en la región de Nueva York-Nueva Jersey es diferente al   ingreso promedio en otras regiones.
+- Criterio de prueba
+
+Se utilizará una prueba t para muestras independientes para evaluar la diferencia entre los ingresos promedios.
+El valor de significancia (α) se establecerá en 0.05.
 
 [Ver Proyecto](https://github.com/lozaner/DataAnalytics/blob/main/portfolio-DA/megaline-cellphone/compañia%20telefonica.ipynb)
 
