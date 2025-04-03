@@ -6,8 +6,23 @@ Bienvenido a mi portafolio de proyectos de análisis de datos con Python. Aquí 
 Los proyectos están organizados de forma cronológica inversa, mostrando primero los más recientes para resaltar mi evolución y mis habilidades actuales. Mi objetivo con este portafolio es compartir no solo los resultados, sino también el aprendizaje y las herramientas que he integrado a lo largo del tiempo, incluyendo bibliotecas como pandas, NumPy, matplotlib, seaborn, y técnicas avanzadas como el modelado predictivo y el aprendizaje automático.
 
 Este portafolio está diseñado para demostrar mi capacidad de transformar datos en información valiosa que impulsa decisiones estratégicas. Espero que disfrutes explorando mi trabajo tanto como yo disfruté creándolo.
+
 ---
-# Proyecto 9 Analisis de Negocio 
+# Proyecto 11 SQL  
+
+## Descripción del proyecto
+
+
+## Proceso de preprocesamiento
+
+
+## Hipótesis general
+
+
+[Ver Proyecto](https://github.com/lozaner/DataAnalytics/blob/main/portfolio-DA/S6-gamestore/game-6.ipynb)
+
+---
+# Proyecto 10 Prueba A/B
 
 ## Descripción del proyecto
 El objetivo principal del proyecto es analizar los resultados de un test A/B aplicado sobre un conjunto de datos provenientes de órdenes y visitas. Se busca evaluar la efectividad de dos estrategias diferentes –identificadas como Grupo A y Grupo B– mediante el estudio de indicadores clave como:
