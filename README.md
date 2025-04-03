@@ -8,15 +8,71 @@ Los proyectos están organizados de forma cronológica inversa, mostrando primer
 Este portafolio está diseñado para demostrar mi capacidad de transformar datos en información valiosa que impulsa decisiones estratégicas. Espero que disfrutes explorando mi trabajo tanto como yo disfruté creándolo.
 
 ---
-# Proyecto 11 SQL  
-
+# Proyecto 11 Comparacion de Grupos A/B
 ## Descripción del proyecto
+El proyecto tiene como objetivo analizar y comparar el comportamiento de usuarios en diferentes experimentos (identificados por exp_id: 246, 247 y 248) a partir de un conjunto de eventos registrados en la aplicación. La idea principal es evaluar cómo varían las tasas de conversión y la progresión en el embudo (desde la aparición de la pantalla principal hasta la finalización de un pago) entre los distintos grupos. Para ello, se exploran aspectos como:
 
+Volumen de Eventos y Usuarios: Se examina el número total de eventos, la cantidad de usuarios únicos y el promedio de eventos por usuario.
+
+Embudo de Conversión: Se estudia la secuencia de eventos (por ejemplo: MainScreenAppear → OffersScreenAppear → CartScreenAppear → PaymentScreenSuccessful) para determinar en qué etapa se pierde mayor cantidad de usuarios y cuál es la proporción que completa el viaje de compra.
+
+Comparación de Grupos Experimentales: Se realizan pruebas de diferencia de proporciones entre los grupos de control (246 y 247) y el grupo con fuentes alteradas (248) para determinar si existen diferencias estadísticamente significativas en la ejecución de cada evento del embudo.
+
+El análisis se apoya en técnicas de limpieza y exploración de datos, visualizaciones (histogramas, gráficos de barras, líneas y scatter plots) y pruebas estadísticas (pruebas de diferencia de proporciones y cálculo del estadístico Z).
 
 ## Proceso de preprocesamiento
+El preprocesamiento se llevó a cabo siguiendo estos pasos:
 
+1. Carga e Iniciación:
+
+- Se importaron las librerías necesarias (Pandas, NumPy, matplotlib, seaborn, SciPy, datetime y sidetable).
+- Se cargó el archivo “logs_exp_us.csv” utilizando el separador adecuado, generando un DataFrame con información de eventos, identificadores de usuario, timestamp y el identificador del experimento (exp_id).
+
+2. Exploración y Limpieza Inicial:
+
+- Se aplicó la función info_gral() para visualizar las primeras filas, conocer la estructura de los datos, revisar la presencia de valores nulos y detectar duplicados.
+- Se renombraron las columnas para facilitar el análisis (por ejemplo, 'event', 'user', 'timestamp' y 'exp_id').
+- Se eliminaron duplicados y se realizó la conversión de la columna de timestamp a formato datetime, creando además una columna “date” que agrupa los eventos por día.
+
+3. Filtrado y Validación de la Muestra:
+
+- Se identificó el período en el que los datos son más completos (a partir del 1 de agosto de 2019), descartando un pequeño porcentaje de eventos y usuarios iniciales para evitar sesgos.
+- Se verificó la distribución de usuarios por grupo experimental y se calcularon indicadores como el número total de eventos, el promedio de eventos por usuario y la proporción de usuarios que participan en cada evento.
+
+4. Construcción del Embudo y Cálculo de Métricas:
+
+- Se determinó el orden de los eventos clave del embudo (por ejemplo: MainScreenAppear, OffersScreenAppear, CartScreenAppear y PaymentScreenSuccessful).
+- Se calcularon las transiciones entre eventos para conocer la frecuencia con la que los usuarios pasan de una etapa a la siguiente y se estimaron las proporciones de conversión en cada paso.
+- Se analizaron las pérdidas en cada etapa (por ejemplo, se identificó que la mayor pérdida ocurre desde la pantalla principal, con un abandono aproximado del 38%).
+
+5. Comparación de Grupos y Pruebas Estadísticas:
+
+-Se evaluaron las tasas de conversión en cada grupo experimental (control 246, control 247 y el grupo 248 con fuentes alteradas).
+-Se realizaron pruebas de diferencia de proporciones (usando el estadístico Z y el p-valor) tanto entre los grupos de control como comparando estos con el grupo alterado.
+- Además, se desarrolló una función para automatizar las comparaciones por cada tipo de evento, verificando que la asignación de los usuarios entre grupos sea homogénea.
 
 ## Hipótesis general
+El análisis busca confirmar si los grupos de control (246 y 247) se dividen de forma equitativa y si el grupo con fuentes alteradas (248) presenta diferencias en la conversión o en la ejecución de eventos. Entre los hallazgos destacan:
+
+1. Embudo de Conversión:
+- Se observa que la etapa “MainScreenAppear” es la que presenta la mayor pérdida de usuarios (38.09%).
+- Solo el 47.81% de los usuarios que comienzan el embudo (MainScreenAppear) llegan a completar el proceso de pago.
+
+2. Comparación de Grupos de Control:
+- Las pruebas de diferencia de proporciones entre los grupos 246 y 247 no muestran diferencias estadísticamente significativas, lo que indica una asignación homogénea de usuarios entre ellos.
+- Comparación con Grupo Alterado (248):
+- Al comparar el grupo 248 contra cada uno de los grupos de control y contra el grupo combinado, no se encontraron diferencias significativas en las proporciones de usuarios que realizan cada uno de los eventos (incluyendo MainScreenAppear, OffersScreenAppear, CartScreenAppear y PaymentScreenSuccessful).
+
+3. Nivel de Significancia:
+- Se estableció un nivel de significancia de 0.05 y se realizaron 15 pruebas en total, lo que respalda la robustez de las conclusiones ante el riesgo de falsos positivos.
+
+4. Conclusión General:
+- El análisis demuestra que las muestras de los grupos de control están bien divididas y que, en comparación, el grupo con fuentes alteradas (248) no presenta diferencias significativas en términos de conversión ni en el embudo de eventos. Se concluye que las estrategias o fuentes aplicadas en el grupo 248 no afectan de manera significativa el comportamiento de los usuarios en comparación con los grupos de control.
+
+5. Recomendaciones:
+- Prestar especial atención a la alta pérdida de usuarios en la etapa de “MainScreenAppear” para mejorar el embudo de conversión.
+- Considerar la realización de nuevas pruebas A/B con cambios más drásticos o modificaciones en la interfaz para ver si se pueden generar mejoras en la conversión global.
+- Mantener el nivel de significancia en 0.05 o, de ser necesario, evaluarlo con un umbral más estricto (por ejemplo, 0.01) para minimizar los falsos positivos, aunque en este caso los resultados se mantienen sin diferencias significativas.
 
 
 [Ver Proyecto](https://github.com/lozaner/DataAnalytics/blob/main/portfolio-DA/S6-gamestore/game-6.ipynb)
