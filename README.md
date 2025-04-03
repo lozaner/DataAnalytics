@@ -6,9 +6,80 @@ Bienvenido a mi portafolio de proyectos de análisis de datos con Python. Aquí 
 Los proyectos están organizados de forma cronológica inversa, mostrando primero los más recientes para resaltar mi evolución y mis habilidades actuales. Mi objetivo con este portafolio es compartir no solo los resultados, sino también el aprendizaje y las herramientas que he integrado a lo largo del tiempo, incluyendo bibliotecas como pandas, NumPy, matplotlib, seaborn, y técnicas avanzadas como el modelado predictivo y el aprendizaje automático.
 
 Este portafolio está diseñado para demostrar mi capacidad de transformar datos en información valiosa que impulsa decisiones estratégicas. Espero que disfrutes explorando mi trabajo tanto como yo disfruté creándolo.
+---
+# Proyecto 9 Analisis de Negocio 
+
+## Descripción del proyecto
+El objetivo principal del proyecto es analizar los resultados de un test A/B aplicado sobre un conjunto de datos provenientes de órdenes y visitas. Se busca evaluar la efectividad de dos estrategias diferentes –identificadas como Grupo A y Grupo B– mediante el estudio de indicadores clave como:
+
+- Tasa de Conversión: Relación entre el número de pedidos y las visitas diarias.
+- Tamaño Promedio de Pedido: Valor promedio de las transacciones.
+- Ganancia Acumulada: Ingresos totales generados a lo largo del tiempo por cada grupo.
+
+La meta es determinar si existe una diferencia estadísticamente significativa entre ambos grupos y, en caso afirmativo, recomendar la implementación de la estrategia que demuestre mejores resultados en términos de conversión y rentabilidad.
+
+## Proceso de preprocesamiento
+1. Importación de Librerías y Carga de Datos:
+
+Se importaron librerías fundamentales como Pandas, NumPy, matplotlib, seaborn, SciPy (stats) y datetime.
+Se cargaron tres conjuntos de datos:
+
+- hipotesis: Contiene las propuestas y sus indicadores (Reach, Impact, Confidence, Effort) para priorizar ideas mediante los frameworks ICE y RICE.
+- ordenes: Registra las transacciones con información sobre ID, fecha, revenue y asignación a grupo (A o B).
+- visitantes: Contiene el número de visitas diarias por grupo.
+
+2. Exploración y Limpieza Inicial:
+
+- Se definió una función de revisión (info_gral) que permitió visualizar las primeras filas, tipos de datos, presencia de valores nulos y duplicados en cada dataset.
+- Se convirtieron las columnas de fecha a formato datetime para garantizar la correcta manipulación temporal de los datos.
+
+Depuración e Integración:
+
+- Se identificaron y eliminaron usuarios que aparecían en ambos grupos, asegurando que cada usuario fuese asignado a un único grupo de prueba para evitar sesgos en el análisis.
+- Se calcularon indicadores ICE y RICE para priorizar las hipótesis y establecer un orden de importancia en función de impacto, alcance, confianza y esfuerzo.
+
+3. Generación de Variables Derivadas y Métricas:
+
+- Se calcularon métricas acumuladas: número de transacciones, visitas acumuladas y revenue acumulado para cada grupo, generando tablas pivot y series temporales.
+- Se derivaron variables como la tasa de conversión diaria (pedidos/visitas) y el tamaño promedio de pedido, así como medidas para identificar anomalías (utilizando percentiles 95 y 99).
+
+4. Visualización y Análisis Exploratorio:
+
+- Se generaron gráficos para visualizar y comparar:
+- La rentabilidad acumulada de los grupos A y B.
+- El número de transacciones acumuladas y su evolución.
+- La diferencia relativa en el tamaño de pedido promedio entre los grupos.
+- La tasa de conversión diaria para identificar tendencias y diferencias significativas.
+- Además, se realizó un análisis de dispersión y se calcularon percentiles para detectar comportamientos atípicos.
+
+## Hipótesis general
+El análisis se centró en determinar si las diferencias observadas entre los grupos A y B eran estadísticamente significativas. Entre los hallazgos clave se destacan:
+
+1. Conversión:
+
+- La prueba de Mann-Whitney aplicada a los datos (después de filtrar usuarios anómalos) arrojó un p-valor menor a 0.05 (p ≈ 0.00879), lo que indica que el Grupo B presenta una tasa de conversión significativamente mayor que el Grupo A.
+- La diferencia relativa en conversión se estimó en aproximadamente un 18.3%, lo que sugiere que la estrategia implementada en el Grupo B es más efectiva para convertir visitas en transacciones.
+
+2. Tamaño Promedio de Pedido:
+
+- Aunque el Grupo B mostró un tamaño promedio de pedido ligeramente inferior (alrededor de un 4.2% menor) en comparación con el Grupo A, la diferencia no fue estadísticamente significativa (p ≈ 0.71053).
+
+3. Ganancia Total:
+
+- El Grupo B generó una ganancia acumulada superior a lo largo del período analizado, lo que respalda la superioridad de su estrategia en términos de ingresos totales.
+- Decisión y Recomendación:
+Con base en los resultados, se recomienda detener el test A/B y considerar al Grupo B como la estrategia líder. La evidencia sugiere que la mejora significativa en la conversión (y, por ende, en la ganancia acumulada) es el factor determinante, a pesar de que el tamaño promedio de pedido no muestra diferencias significativas.
+
+Esta decisión se justifica por:
+
+- Mayor eficacia en conversión: El Grupo B convierte un mayor porcentaje de visitas en transacciones.
+- Rentabilidad acumulada: La ganancia total del Grupo B supera a la del Grupo A.
+- Estabilidad de resultados: Los análisis gráficos y estadísticos confirman la consistencia del desempeño superior del Grupo B.
+
+[Ver Proyecto](https://github.com/lozaner/DataAnalytics/blob/main/portfolio-DA/S6-gamestore/game-6.ipynb)
 
 ---
-# Proyecto 9 SQL  
+# Proyecto 9 Analisis de Negocio 
 
 ## Descripción del proyecto
 El proyecto se enfoca en el análisis de datos de una empresa dedicada a la venta de entradas para eventos. El objetivo principal es optimizar los gastos de marketing, identificando cuáles son las fuentes de adquisición y estrategias que permiten maximizar el retorno de la inversión (ROI) y el valor del cliente a lo largo del tiempo (LTV). Para ello, se utilizan distintos conjuntos de datos:
