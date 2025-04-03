@@ -8,6 +8,51 @@ Los proyectos están organizados de forma cronológica inversa, mostrando primer
 Este portafolio está diseñado para demostrar mi capacidad de transformar datos en información valiosa que impulsa decisiones estratégicas. Espero que disfrutes explorando mi trabajo tanto como yo disfruté creándolo.
 
 ---
+# Proyecto 12 Uso de Tableau Dash y Pipeline
+## Descripción del proyecto 📊🎥
+
+El proyecto se centra en el análisis de tendencias de videos en YouTube con el objetivo de identificar patrones de popularidad en distintas regiones y categorías. La agencia de publicidad Sterling & Draper busca optimizar su estrategia de marketing mediante un dashboard interactivo que automatice la consulta de datos de tendencias, permitiendo que los gerentes de planificación de videos publicitarios accedan a información clave de manera eficiente.
+
+El dashboard proporciona información sobre:
+- Las categorías de videos más populares en tendencia.
+- La distribución de tendencias en distintas regiones.
+- La identificación de categorías particularmente populares en Estados Unidos.
+- La comparación de tendencias entre EE.UU. y otros países.
+- Para lograr esto, se ha creado una base de datos llamada "youtube", que almacena la tabla "trending_by_time", actualizada diariamente con información sobre la región, fecha de tendencia, categoría del video y cantidad de videos en tendencia.
+
+## Preprocesamiento de Datos ⚙️🧹
+  
+Para garantizar la precisión del análisis, se realizaron los siguientes pasos de limpieza y transformación de datos:
+1. Revisión y filtrado de datos:
+    - Se verificó la existencia de valores nulos o inconsistentes en los campos de fecha, categoría y región.
+    - Se descartaron registros duplicados para evitar conteos erróneos en los gráficos.
+2. Conversión de tipos de datos:
+    - Se transformaron las fechas en un formato adecuado para facilitar el análisis cronológico.
+    - Se aseguraron los valores numéricos en la columna "videos_count" para permitir cálculos precisos.
+3. Creación de estructuras agregadas:
+    - Se agruparon los datos por fecha y categoría para identificar tendencias temporales.
+    - Se agregaron métricas de conteo por región y categoría para permitir comparaciones entre países.
+4. Visualización y validación:
+    - Se diseñaron gráficos en Tableau para representar los datos de forma intuitiva.
+    - Se realizaron pruebas de acceso y validación en distintos navegadores para garantizar la disponibilidad del dashboard.
+
+## Hipótesis general 📌
+"Las categorías Entertainment, Music y Howto & Style son las más frecuentes en tendencias a nivel global."
+    - Según los análisis, estas categorías presentan el mayor número de videos en tendencia.
+
+"Las tendencias de videos varían significativamente entre regiones."
+    - Se observa que Rusia tiene la mayor proporción de videos en tendencia, seguida de EE.UU., Francia e India.
+
+"Las categorías populares en EE.UU. difieren de las de otros países."
+    - Mientras que en EE.UU. destacan Autos & Vehicles, Comedy y Education, en otras regiones las categorías pueden ser distintas.
+
+"El análisis automatizado mediante dashboards facilita la toma de decisiones en estrategias de marketing."
+    - La implementación del dashboard optimiza el acceso a la información y reduce el tiempo necesario para responder a preguntas clave sobre tendencias en YouTube.
+
+
+[Ver Proyecto](https://github.com/lozaner/DataAnalytics/blob/main/portfolio-DA/S6-gamestore/game-6.ipynb)
+
+---
 # Proyecto 11 Comparacion de Grupos A/B
 ## Descripción del proyecto
 El proyecto tiene como objetivo analizar y comparar el comportamiento de usuarios en diferentes experimentos (identificados por exp_id: 246, 247 y 248) a partir de un conjunto de eventos registrados en la aplicación. La idea principal es evaluar cómo varían las tasas de conversión y la progresión en el embudo (desde la aparición de la pantalla principal hasta la finalización de un pago) entre los distintos grupos. Para ello, se exploran aspectos como:
