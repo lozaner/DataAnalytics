@@ -8,6 +8,52 @@ Los proyectos están organizados de forma cronológica inversa, mostrando primer
 Este portafolio está diseñado para demostrar mi capacidad de transformar datos en información valiosa que impulsa decisiones estratégicas. Espero que disfrutes explorando mi trabajo tanto como yo disfruté creándolo.
 
 ---
+# Proyecto 9 SQL  
+
+## Descripción del proyecto
+El proyecto se enfoca en el análisis de datos de una empresa dedicada a la venta de entradas para eventos. El objetivo principal es optimizar los gastos de marketing, identificando cuáles son las fuentes de adquisición y estrategias que permiten maximizar el retorno de la inversión (ROI) y el valor del cliente a lo largo del tiempo (LTV). Para ello, se utilizan distintos conjuntos de datos:
+
+Datos de visitas: Información sobre las sesiones de usuarios en la página web, con detalles como dispositivo utilizado, tiempo de inicio y fin de sesión, y fuente de adquisición.
+
+Datos de órdenes: Registro de las compras realizadas, que incluye la fecha de compra, el revenue generado y el identificador único del usuario.
+
+Datos de costos: Información sobre el gasto en marketing, segmentada por fuente de adquisición y distribuida a lo largo del tiempo.
+
+El análisis se realiza a través de un notebook que guía al usuario en el proceso de transformación, exploración y análisis de estos datos, permitiendo obtener insights clave para mejorar la eficiencia de las inversiones en marketing.
+
+## Proceso de preprocesamiento
+El preprocesamiento de los datos fue fundamental para asegurar la calidad del análisis y se llevó a cabo siguiendo estos pasos:
+
+Carga y revisión inicial:
+- Se importaron los datasets (visitas, órdenes y costos) en formato CSV.
+- Se visualizó una muestra de los datos y se revisó la información general para identificar posibles valores faltantes o inconsistencias.
+- Limpieza y transformación:
+- Se estandarizaron los nombres de las columnas a formato snake_case para facilitar el manejo de la información.
+- Se convirtieron las columnas de fechas a formato datetime para poder realizar operaciones temporales.
+- Se verificaron y eliminaron posibles duplicidades o registros erróneos, asegurando la integridad de la información.
+- Generación de variables adicionales:
+- Se crearon nuevas columnas para facilitar el análisis, como la duración de la sesión (calculada como la diferencia entre el inicio y fin de la sesión) y agrupaciones temporales (por día, semana y mes).
+- Se realizó una segmentación mediante cohortes para analizar la retención de usuarios y el comportamiento a lo largo del tiempo.
+- Se combinó la información de visitas, órdenes y costos para obtener una visión integral de la relación entre gasto en marketing, adquisición de clientes y su posterior comportamiento (como el revenue generado).
+
+Visualización y análisis exploratorio:
+- Se generaron gráficos para visualizar la distribución de visitas (DAU, WAU, MAU), la duración de las sesiones y la retención de usuarios a lo largo del tiempo.
+- Se analizaron los patrones de compra, identificando la temporalidad y frecuencia con la que los usuarios realizaban órdenes, así como el revenue por cohorte.
+
+## Hipótesis general
+Con base en el análisis realizado se plantea la siguiente hipótesis general:
+
+Hipótesis:
+
+Optimizar los gastos de marketing focalizándose en las fuentes de adquisición que generan mayor conversión y presentan un menor costo de adquisición de clientes (CAC) permitirá aumentar significativamente el retorno de inversión (ROI) y el valor a largo plazo del cliente (LTV).
+Fundamentación:
+- Comportamiento de usuarios: Los análisis muestran que la mayoría de las visitas provienen de dispositivos desktop, lo que sugiere una mayor intención de compra en este segmento. 
+- Retención y conversión: Se evidencia que los clientes que realizan la primera compra en un periodo corto tras su primera visita tienden a generar un mayor revenue acumulado, lo que se traduce en mejores indicadores de retención.
+- Optimización de inversión: Al identificar las fuentes de adquisición que, a pesar de generar un mayor gasto en marketing, convierten a un mayor número de clientes con menor CAC, se puede reorientar la inversión para maximizar el retorno y la eficiencia de los recursos asignados a campañas publicitarias.
+
+[Ver Proyecto](https://github.com/lozaner/DataAnalytics/blob/main/portfolio-DA/S6-gamestore/game-6.ipynb)
+
+---
 # Proyecto 8 SQL  
 
 ## Descripción del proyecto
