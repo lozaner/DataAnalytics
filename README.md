@@ -10,6 +10,36 @@ Este portafolio está diseñado para demostrar mi capacidad de transformar datos
 ---
 # Proyecto 12 Uso de Tableau Dash y Pipeline
 ## Descripción del proyecto 📊🎥
+Este proyecto se centra en analizar y modelar la cancelación (churn) de clientes en un gimnasio. El objetivo es identificar los factores que influyen en la retención y en la cancelación de los clientes, para así poder diseñar estrategias que mejoren la fidelización. Se trabaja con un conjunto de datos que incluye características demográficas y de comportamiento (por ejemplo, edad, contrato, visitas al gimnasio, gasto en servicios adicionales y frecuencia de clases) de 4000 clientes. Además de un análisis exploratorio y descriptivo, se entrenan modelos de predicción (como Regresión Logística y Bosque Aleatorio) para determinar cuál es el mejor método para anticipar la cancelación de clientes. También se realiza un análisis de segmentación mediante clustering para agrupar a los clientes en perfiles con diferentes niveles de riesgo de churn, permitiendo así generar recomendaciones de acciones de retención específicas para cada grupo.
+
+## Preprocesamiento de Datos ⚙️🧹
+El proceso de preprocesamiento incluyó los siguientes pasos:
+
+1. Carga y Exploración Inicial:
+- Se importaron las librerías necesarias (Pandas, Matplotlib, Seaborn, Scikit-Learn, entre otras).
+- Se cargó el archivo gym_churn_us.csv y se revisó la estructura de los datos con métodos como info(), describe() y isna().sum().
+
+2. Limpieza de Datos:
+- Se verificaron y corrigieron inconsistencias, asegurando que no existan valores nulos ni duplicados.
+- Se estandarizaron los nombres de las columnas (por ejemplo, se convirtieron a minúsculas o se ajustaron para mayor claridad).
+
+3. Transformación y Preparación:
+
+- Se analizaron las distribuciones de variables numéricas mediante histogramas y se calcularon estadísticas descriptivas (promedio, desviación estándar, etc.).
+- Se exploraron correlaciones entre variables con mapas de calor para identificar relaciones potenciales.
+- Se dividieron los datos en conjuntos de entrenamiento y validación para la construcción de modelos predictivos.
+-Se realizaron transformaciones adicionales, como la estandarización de variables antes de aplicar algoritmos de clustering.
+
+4. Segmentación de Clientes:
+- Se aplicó un análisis de clustering (usando K-Means y técnicas jerárquicas) para segmentar a los clientes en cinco clústeres, permitiendo identificar grupos con distintos perfiles de riesgo en términos de churn.
+
+## Hipótesis general 📌
+
+[Ver Proyecto](https://github.com/lozaner/DataAnalytics/blob/main/portfolio-DA/S6-gamestore/game-6.ipynb)
+
+---
+# Proyecto 12 Uso de Tableau Dash y Pipeline
+## Descripción del proyecto 📊🎥
 
 El proyecto se centra en el análisis de tendencias de videos en YouTube con el objetivo de identificar patrones de popularidad en distintas regiones y categorías. La agencia de publicidad Sterling & Draper busca optimizar su estrategia de marketing mediante un dashboard interactivo que automatice la consulta de datos de tendencias, permitiendo que los gerentes de planificación de videos publicitarios accedan a información clave de manera eficiente.
 
