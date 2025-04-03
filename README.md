@@ -34,6 +34,18 @@ El proceso de preprocesamiento incluyó los siguientes pasos:
 - Se aplicó un análisis de clustering (usando K-Means y técnicas jerárquicas) para segmentar a los clientes en cinco clústeres, permitiendo identificar grupos con distintos perfiles de riesgo en términos de churn.
 
 ## Hipótesis general 📌
+A partir del análisis exploratorio y de los resultados obtenidos en la modelización y segmentación, se plantean las siguientes hipótesis:
+
+1. Retención y Contrato:
+    - "Los clientes con contratos de mayor duración tienden a cancelar con menor frecuencia, ya que el compromiso a largo plazo se asocia con una mayor fidelidad."
+2. Frecuencia de Asistencia:
+    - "Una alta frecuencia de visitas y asistencia a clases está correlacionada con una menor probabilidad de cancelación, mientras que una baja asistencia puede ser un indicador temprano de riesgo de churn."
+3. Gasto en Servicios Adicionales:
+    - "El mayor gasto en servicios adicionales (como clases extras, masajes o cafetería) está relacionado con una mayor retención, ya que estos clientes invierten más en la experiencia del gimnasio."
+4. Segmentación de Clientes:
+    - "La segmentación de clientes mediante clustering revelará perfiles diferenciados, donde algunos grupos (con mayor compromiso y gasto) mostrarán tasas de cancelación significativamente menores en comparación con aquellos con contratos cortos y menor frecuencia de visitas."
+
+Estas hipótesis buscan guiar las estrategias de retención y fidelización, permitiendo diseñar intervenciones específicas para los distintos segmentos de clientes y, en consecuencia, reducir el churn en el gimnasio.
 
 [Ver Proyecto](https://github.com/lozaner/DataAnalytics/blob/main/portfolio-DA/S6-gamestore/game-6.ipynb)
 
