@@ -8,7 +8,110 @@ Los proyectos están organizados de forma cronológica inversa, mostrando primer
 Este portafolio está diseñado para demostrar mi capacidad de transformar datos en información valiosa que impulsa decisiones estratégicas. Espero que disfrutes explorando mi trabajo tanto como yo disfruté creándolo.
 
 ---
-# Proyecto 12 Uso de Tableau Dash y Pipeline
+# Proyecto 16 SQL
+## Descripción del proyecto 📊🎥
+El proyecto se centra en analizar una base de datos proporcionada por un servicio de biblioteca en línea, el cual compite en el mercado de libros digitales y físicos. Esta base de datos contiene información sobre libros, autores, editoriales, calificaciones y reseñas de usuarios. La finalidad es extraer insights relevantes que permitan diseñar una propuesta de valor para un nuevo producto dirigido a los amantes de la lectura, considerando aspectos como tendencias de publicación, popularidad de títulos, desempeño de editoriales y la percepción de los usuarios.
+
+## Preprocesamiento de Datos ⚙️🧹
+Para preparar el análisis se siguieron estos pasos:
+- Carga de Datos: Se importaron los datos mediante librerías como Pandas y SQLAlchemy, conectándose a la base de datos SQL.
+- Exploración y Limpieza:
+    - Se revisó la estructura de cada tabla (libros, autores, editoriales, ratings y reseñas) usando una función de resumen que muestra las primeras filas, información general, verificación de datos faltantes y duplicados.
+    - Se constató que no existían valores ausentes ni duplicados en ninguno de los DataFrames, lo que facilitó el análisis posterior.
+- Integración: Los datos se cargaron y validaron para asegurar su integridad y consistencia antes de proceder con las consultas analíticas.
+
+## Hipótesis general 📌
+La hipótesis central del estudio es que mediante el análisis de la información contenida en la base de datos se podrán identificar patrones y tendencias en el comportamiento de los lectores (por ejemplo, en cuanto a la cantidad de libros publicados en la era moderna, popularidad y valoraciones) que sirvan para diseñar una propuesta de valor competitiva para un nuevo producto en el mercado de libros. Se parte de la premisa de que el entendimiento profundo de estos datos permitirá descubrir insights accionables sobre las preferencias y comportamientos de los usuarios, facilitando el desarrollo de un producto que responda eficazmente a sus necesidades.
+
+
+[Ver Proyecto](https://github.com/lozaner/DataAnalytics/blob/main/portfolio-DA/S6-gamestore/game-6.ipynb)
+
+---
+# Proyecto 15 Prueba A/B
+## Descripción del proyecto 📊🎥
+El proyecto consiste en la realización de una prueba A/B para una tienda en línea internacional, en la que se evaluó la implementación de un nuevo embudo de pago basado en un sistema de recomendaciones mejorado. Se compararon dos grupos de usuarios:
+
+Grupo A (Control): Usuarios que experimentaron el embudo de pago tradicional.
+
+Grupo B (Experimental): Usuarios que utilizaron el nuevo embudo de pago.
+
+El objetivo central es analizar si el nuevo sistema incrementa las conversiones a lo largo del embudo, que incluye la visita a la página del producto, la adición de artículos al carrito y la realización de compras. Se esperaba un aumento mínimo del 10% en cada una de estas etapas en el grupo experimental.
+
+## Preprocesamiento de Datos ⚙️🧹
+El preprocesamiento de datos realizado en el proyecto abarcó las siguientes etapas:
+
+1. Carga de Datos: Se importaron diversos archivos CSV que contienen información sobre eventos de marketing, registros de nuevos usuarios, eventos de usuario y participantes de la prueba.
+
+L2. impieza y Transformación:
+    - Revisión y eliminación de duplicados en los datasets.
+    - Manejo de valores nulos, por ejemplo, en la columna “details” del dataset de eventos, donde se reemplazaron los NaN por 0.
+    - Conversión de campos de fecha a formato datetime para facilitar el análisis temporal.
+
+3. Integración de Datos: Se realizaron merge entre los datasets (por ejemplo, unir eventos con participantes) utilizando la columna “user_id”, de modo que se analizara únicamente la información relacionada con la prueba A/B "recommender_system_test".
+
+4. Exploración Inicial: Se evaluó la distribución de eventos por usuario y se verificó la correcta asignación de usuarios a cada grupo (A y B).
+
+## Hipótesis general 📌
+La hipótesis general del experimento es que el nuevo sistema de recomendaciones implementado en el embudo de pago influirá positivamente en las conversiones de los usuarios. Concretamente, se plantea que:
+
+    -  Dentro de los 14 días posteriores a la inscripción, los usuarios expuestos al nuevo embudo (Grupo B) presentarán un incremento en la conversión en cada etapa (visitas a la página del producto, adición al carrito y compras) de al menos el 10% en comparación con el grupo de control (Grupo A).
+
+Esta hipótesis es la base para evaluar si la implementación del nuevo sistema mejora la eficiencia del embudo de ventas y, por ende, la experiencia y comportamiento de los usuarios.
+
+[Ver Proyecto](https://github.com/lozaner/DataAnalytics/blob/main/portfolio-DA/S6-gamestore/game-6.ipynb)
+
+---
+# Proyecto 14 Hipotesis con sugerencias CallMeMaybe
+## Descripción del proyecto 📊🎥
+El proyecto "Detección de Áreas de Mejora en el Servicio de Llamadas" tiene como objetivo optimizar la experiencia del cliente en la empresa CallMeMaybe. En este contexto, se busca:
+
+    - Mejorar la eficiencia de los operadores: Identificar áreas en las que se pueden implementar mejoras para reducir las llamadas perdidas y optimizar los tiempos de espera.
+    - Análisis de métricas clave: Se analizan indicadores como la duración de las llamadas, la distribución entre llamadas internas (entre operadores) y llamadas salientes (con clientes), y el porcentaje de llamadas perdidas.
+    - Evaluación del desempeño: Se estudia la relación entre el tiempo de espera y el porcentaje de llamadas perdidas, y se segmenta a los operadores en grupos de eficiencia para determinar cuáles requieren atención o capacitación.
+    - Dashboard interactivo: El proyecto incluye el desarrollo de un dashboard que, mediante filtros de fecha, hora y región, permite visualizar gráficos (histogramas, gráficos de pastel, barras, etc.) y responder preguntas clave sobre la popularidad de llamadas, desempeño de operadores y áreas de riesgo.
+
+El objetivo final es implementar mejoras basadas en datos, como la revisión del sistema de enrutamiento y la capacitación específica para operadores con bajo rendimiento, además de planificar pruebas A/B para validar las intervenciones.
+## Preprocesamiento de Datos ⚙️🧹
+Para preparar la información que alimenta el dashboard y el análisis, se han seguido estos pasos:
+
+1. Recolección de Datos:
+    - Los datos provienen de una tabla de agregación ubicada en la base de datos "CallMeMaybe", la cual registra información sobre las llamadas, incluyendo la duración, la región, el tipo de llamada (entrante o saliente), y métricas de llamadas perdidas y tiempos de espera.
+
+2. Limpieza y Verificación:
+    - Se han revisado los registros para detectar y eliminar duplicados, asegurando que no existan valores nulos o inconsistentes.
+    - Se ha verificado que las columnas relacionadas con el tiempo (duración, tiempo de espera) y los conteos (número de llamadas, porcentaje de llamadas perdidas) estén correctamente formateadas.
+
+3. Transformación de Datos:
+    - Se han convertido las marcas de tiempo a formatos legibles para facilitar el análisis cronológico y la generación de histogramas.
+    - Se han agregado y calculado variables derivadas, como el porcentaje de llamadas perdidas por operador y la relación entre el tiempo de espera y dicho porcentaje.
+
+4. Agregación y Filtrado:
+    - Los datos se agruparon por región, fecha y tipo de llamada para obtener valores absolutos y porcentajes que alimenten los gráficos del dashboard.
+
+Se prepararon subconjuntos de datos para analizar la eficiencia de los operadores y detectar aquellos con un alto porcentaje de llamadas perdidas o tiempos de espera excesivos.
+
+## Hipótesis general 📌
+Con base en el análisis de las métricas y la visualización de los datos, se plantean las siguientes hipótesis:
+
+1. Relación entre Tiempo de Espera y Llamadas Perdidas:
+    - "A mayor tiempo de espera, mayor será el porcentaje de llamadas perdidas. Reducir los tiempos de espera debería disminuir la cantidad de llamadas perdidas, mejorando así la experiencia del cliente."
+
+2. Impacto de las Llamadas Internas en la Eficiencia:
+    - "Un elevado porcentaje de llamadas internas (entre operadores) podría indicar una dependencia excesiva de la comunicación interna, lo que puede generar retrasos en la atención a clientes. Una redistribución o mejora en la comunicación interna podría optimizar la eficiencia."
+
+3. Diferencias en el Desempeño de los Operadores:
+    - "Los operadores con un porcentaje alto de llamadas perdidas y tiempos de espera prolongados son menos eficientes. Implementar capacitación adicional y revisar el sistema de enrutamiento de llamadas puede mejorar significativamente su desempeño."
+
+4. Efecto de las Intervenciones en la Experiencia del Cliente:
+    - "La aplicación de medidas correctivas (como incentivos, revisiones del sistema y seguimiento en tiempo real) conducirá a una reducción en las llamadas perdidas y mejorará la satisfacción del cliente, reflejado en un mejor rendimiento de los operadores."
+
+Estas hipótesis guiarán la toma de decisiones para implementar estrategias de mejora en el servicio de llamadas, con el objetivo de optimizar tanto la eficiencia operativa como la experiencia general del cliente.
+
+
+[Ver Proyecto](https://github.com/lozaner/DataAnalytics/blob/main/portfolio-DA/S6-gamestore/game-6.ipynb)
+
+---
+# Proyecto 13 Pronosticos de prediccion con machine learning
 ## Descripción del proyecto 📊🎥
 Este proyecto se centra en analizar y modelar la cancelación (churn) de clientes en un gimnasio. El objetivo es identificar los factores que influyen en la retención y en la cancelación de los clientes, para así poder diseñar estrategias que mejoren la fidelización. Se trabaja con un conjunto de datos que incluye características demográficas y de comportamiento (por ejemplo, edad, contrato, visitas al gimnasio, gasto en servicios adicionales y frecuencia de clases) de 4000 clientes. Además de un análisis exploratorio y descriptivo, se entrenan modelos de predicción (como Regresión Logística y Bosque Aleatorio) para determinar cuál es el mejor método para anticipar la cancelación de clientes. También se realiza un análisis de segmentación mediante clustering para agrupar a los clientes en perfiles con diferentes niveles de riesgo de churn, permitiendo así generar recomendaciones de acciones de retención específicas para cada grupo.
 
