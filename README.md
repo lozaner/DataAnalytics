@@ -24,7 +24,7 @@ Para preparar el análisis se siguieron estos pasos:
 La hipótesis central del estudio es que mediante el análisis de la información contenida en la base de datos se podrán identificar patrones y tendencias en el comportamiento de los lectores (por ejemplo, en cuanto a la cantidad de libros publicados en la era moderna, popularidad y valoraciones) que sirvan para diseñar una propuesta de valor competitiva para un nuevo producto en el mercado de libros. Se parte de la premisa de que el entendimiento profundo de estos datos permitirá descubrir insights accionables sobre las preferencias y comportamientos de los usuarios, facilitando el desarrollo de un producto que responda eficazmente a sus necesidades.
 
 
-[Ver Proyecto](https://github.com/lozaner/DataAnalytics/blob/main/portfolio-DA/S6-gamestore/game-6.ipynb)
+[Ver Proyecto](https://github.com/lozaner/DataAnalytics/blob/main/portfolio-DA/S14-PF-pruebaAB-SQL-Hipotesis/SQL/sql_notas.ipynb)
 
 ---
 # Proyecto 15 Prueba A/B
@@ -58,7 +58,7 @@ La hipótesis general del experimento es que el nuevo sistema de recomendaciones
 
 Esta hipótesis es la base para evaluar si la implementación del nuevo sistema mejora la eficiencia del embudo de ventas y, por ende, la experiencia y comportamiento de los usuarios.
 
-[Ver Proyecto](https://github.com/lozaner/DataAnalytics/blob/main/portfolio-DA/S6-gamestore/game-6.ipynb)
+[Ver Proyecto](https://github.com/lozaner/DataAnalytics/blob/main/portfolio-DA/S14-PF-pruebaAB-SQL-Hipotesis/PruebaAB/PruebaAB.ipynb)
 
 ---
 # Proyecto 14 Hipotesis con sugerencias CallMeMaybe
@@ -107,8 +107,8 @@ Con base en el análisis de las métricas y la visualización de los datos, se p
 
 Estas hipótesis guiarán la toma de decisiones para implementar estrategias de mejora en el servicio de llamadas, con el objetivo de optimizar tanto la eficiencia operativa como la experiencia general del cliente.
 
-
-[Ver Proyecto](https://github.com/lozaner/DataAnalytics/blob/main/portfolio-DA/S6-gamestore/game-6.ipynb)
+[Ver Proyecto](https://github.com/lozaner/DataAnalytics/blob/main/portfolio-DA/S14-PF-pruebaAB-SQL-Hipotesis/hipotesis-con-sugerencias/hipotesis-con-sugerencias.ipynb)
+[Ver Presentacion](https://github.com/lozaner/DataAnalytics/blob/main/portfolio-DA/S14-PF-pruebaAB-SQL-Hipotesis/hipotesis-con-sugerencias/dashboard.pdf)
 
 ---
 # Proyecto 13 Pronosticos de prediccion con machine learning
@@ -150,7 +150,7 @@ A partir del análisis exploratorio y de los resultados obtenidos en la modeliza
 
 Estas hipótesis buscan guiar las estrategias de retención y fidelización, permitiendo diseñar intervenciones específicas para los distintos segmentos de clientes y, en consecuencia, reducir el churn en el gimnasio.
 
-[Ver Proyecto](https://github.com/lozaner/DataAnalytics/blob/main/portfolio-DA/S6-gamestore/game-6.ipynb)
+[Ver Proyecto](https://github.com/lozaner/DataAnalytics/blob/main/portfolio-DA/S13-pronosticos-predicion-machine-learning/model_fitness_gym.ipynb)
 
 ---
 # Proyecto 12 Uso de Tableau Dash y Pipeline
@@ -195,7 +195,7 @@ Para garantizar la precisión del análisis, se realizaron los siguientes pasos 
     - La implementación del dashboard optimiza el acceso a la información y reduce el tiempo necesario para responder a preguntas clave sobre tendencias en YouTube.
 
 
-[Ver Proyecto](https://github.com/lozaner/DataAnalytics/blob/main/portfolio-DA/S6-gamestore/game-6.ipynb)
+[Ver Proyecto](https://github.com/lozaner/DataAnalytics/blob/main/portfolio-DA/S12-tableau_pipeline_dash/presentacion_dashboard.pdf)
 
 ---
 # Proyecto 11 Comparacion de Grupos A/B
@@ -265,7 +265,7 @@ El análisis busca confirmar si los grupos de control (246 y 247) se dividen de 
 - Mantener el nivel de significancia en 0.05 o, de ser necesario, evaluarlo con un umbral más estricto (por ejemplo, 0.01) para minimizar los falsos positivos, aunque en este caso los resultados se mantienen sin diferencias significativas.
 
 
-[Ver Proyecto](https://github.com/lozaner/DataAnalytics/blob/main/portfolio-DA/S6-gamestore/game-6.ipynb)
+[Ver Proyecto](https://github.com/lozaner/DataAnalytics/blob/main/portfolio-DA/S11-analisis-producto-alimenticio%20prueba%20AB/comparacion-grupos.ipynb)
 
 ---
 # Proyecto 10 Prueba A/B
@@ -337,7 +337,7 @@ Esta decisión se justifica por:
 - Rentabilidad acumulada: La ganancia total del Grupo B supera a la del Grupo A.
 - Estabilidad de resultados: Los análisis gráficos y estadísticos confirman la consistencia del desempeño superior del Grupo B.
 
-[Ver Proyecto](https://github.com/lozaner/DataAnalytics/blob/main/portfolio-DA/S6-gamestore/game-6.ipynb)
+[Ver Proyecto](https://github.com/lozaner/DataAnalytics/blob/main/portfolio-DA/S10-hipotesis-prueba%20AB/hipotesis%20AB.ipynb)
 
 ---
 # Proyecto 9 Analisis de Negocio 
@@ -383,7 +383,7 @@ Fundamentación:
 - Retención y conversión: Se evidencia que los clientes que realizan la primera compra en un periodo corto tras su primera visita tienden a generar un mayor revenue acumulado, lo que se traduce en mejores indicadores de retención.
 - Optimización de inversión: Al identificar las fuentes de adquisición que, a pesar de generar un mayor gasto en marketing, convierten a un mayor número de clientes con menor CAC, se puede reorientar la inversión para maximizar el retorno y la eficiencia de los recursos asignados a campañas publicitarias.
 
-[Ver Proyecto](https://github.com/lozaner/DataAnalytics/blob/main/portfolio-DA/S6-gamestore/game-6.ipynb)
+[Ver Proyecto](https://github.com/lozaner/DataAnalytics/blob/main/portfolio-DA/S9-analisis-de-negocio/analisis-showz_3-0.ipynb)
 
 ---
 # Proyecto 8 SQL  
@@ -422,7 +422,7 @@ Para comprobar la hipótesis:
 -  Se aplicó una prueba t-test para determinar si hay diferencias significativas entre las medias.
 -  Se estableció un nivel de significancia de 0.05 para la prueba.
 
-[Ver Proyecto](https://github.com/lozaner/DataAnalytics/blob/main/portfolio-DA/S6-gamestore/game-6.ipynb)
+[Ver Proyecto](https://github.com/lozaner/DataAnalytics/blob/main/portfolio-DA/S8-sql/analisis%20taxis%20dias%20lluviosos.ipynb)
 
 ---
 # Proyecto 7 Aplicacion Web
@@ -472,7 +472,7 @@ Los datos incluyen información sobre:
 5. Hipótesis nula (H₀): No existe una correlación significativa entre el año de fabricación y el precio del vehículo.
 6. Hipótesis alternativa (H₁): Existe una correlación significativa entre el año de fabricación y el precio del vehículo.
 
-[Ver Proyecto](https://github.com/lozaner/DataAnalytics/blob/main/portfolio-DA/S6-gamestore/game-6.ipynb)
+[Ver Proyecto](https://notebooks-o54z.onrender.com/)
 
 ---
 
@@ -562,7 +562,7 @@ El proyecto consiste en analizar los ingresos generados por dos planes tarifario
 Se utilizará una prueba t para muestras independientes para evaluar la diferencia entre los ingresos promedios.
 El valor de significancia (α) se establecerá en 0.05.
 
-[Ver Proyecto](https://github.com/lozaner/DataAnalytics/blob/main/portfolio-DA/megaline-cellphone/compañia%20telefonica.ipynb)
+[Ver Proyecto](https://github.com/lozaner/DataAnalytics/blob/main/portfolio-DA/S5-megaline-cellphone/compa%C3%B1ia-telefonica.ipynb)
 
 
 ---
@@ -598,7 +598,7 @@ Unión de tablas utilizando claves comunes (por ejemplo, product_id o order_id).
 
 4.-Ofertas y promociones: Los descuentos o promociones impactan significativamente en el volumen de compras.
 
-[Ver Proyecto](https://github.com/lozaner/DataAnalytics/blob/main/portfolio-DA/data-wrangling-instacart/instacart-grocery.ipynb)
+[Ver Proyecto](https://github.com/lozaner/DataAnalytics/blob/main/portfolio-DA/S4-data-wrangling-instacart/instacart-grocery.ipynb)
 ---
 # Proyecto 3 Data Wrangling Spotify  🎤🔊
 ## Descripción de los datos
@@ -633,8 +633,10 @@ Voy a calcular las medias y realizar una prueba estadística (t-test) para compa
 
 Parece que no puedo realizar análisis de datos más avanzados en este momento. Por favor, inténtalo de nuevo más tarde o proporciona más detalles si necesitas asistencia adicional con los resultados o análisis.
 
-[Ver Proyecto](https://github.com/lozaner/DataAnalytics/blob/main/portfolio-DA/data-wrangling-spotify/data-wrangling-spotify.ipynb)
+[Ver Proyecto](https://github.com/lozaner/DataAnalytics/blob/main/portfolio-DA/S3-data-wrangling-spotify/data-wrangling-spotify.ipynb)
+
 ---
+
 # Proyecto 2 Analisis de Store Basico
 
 ## Descripción de datos
@@ -659,11 +661,10 @@ Reducción de dimensionalidad o selección de variables relevantes.
 ## Prueba de hipótesis
 Este proyecto se hizo limpieza general de toda la informacion asi como se creo funciones para simplicar nuestro trabajo de limpieza.
 
+[Ver Proyecto](https://github.com/lozaner/DataAnalytics/blob/main/portfolio-DA/S2-analisis-venta-basico-2/analis-venta-basico-2.ipynb)
 
-
-
-[Ver Proyecto](https://github.com/lozaner/DataAnalytics/blob/main/portfolio-DA/analisis-venta-basico-2/analis-venta-basico-2.ipynb)
 ---
+
 # Proyecto 1 Analisis de Store Basico
 
 ## Descripción de los datos
@@ -706,7 +707,7 @@ En este proyecto fue iniciandome en el mundo de analisis de datos siendo la part
 
 
 
-[Ver Proyecto](https://github.com/lozaner/DataAnalytics/blob/main/portfolio-DA/analisis-venta-basico/store_1.ipynb)
+[Ver Proyecto](https://github.com/lozaner/DataAnalytics/blob/main/portfolio-DA/S1-analisis-tienda-basico-1/store_1.ipynb)
 ---
 
 ## 👨‍💻 Autor
